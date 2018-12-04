@@ -9,7 +9,7 @@ categories: 数据库
 
 1. 从docke hub上获取下载地址
 
-   ![下载地址](docker使用mongoDb\TIM截图20181204160443.png)
+   ![下载地址](docker使用mongoDb/TIM截图20181204160443.png)
 
    > 默认版本信息为(latest) 如需其他版本也可在docker hub中查找 
 
@@ -35,13 +35,13 @@ categories: 数据库
 
  **坑**: 使用命令 docker ps 查看运行容器  发现容器没有启动
 
-![查看](docker使用mongoDb\TIM截图20181204162115.png)
+![查看](docker使用mongoDb/TIM截图20181204162115.png)
 
 使用命令docker ps -a 查看 发现容器已经退出 
 
 使用命令docker logs (containerId) 查看日志信息
 
-![](docker使用mongodb\TIM截图20181204162659.png) 
+![](docker使用mongodb/TIM截图20181204162659.png) 
 
 提示权限不够  在运行命令加上  --privileged=true 
 
