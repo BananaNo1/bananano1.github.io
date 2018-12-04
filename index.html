@@ -400,10 +400,10 @@
           
             <h4 id="多客户端使用"><a href="#多客户端使用" class="headerlink" title="多客户端使用"></a>多客户端使用</h4><ol>
 <li><p>github上创建多分支,hexo管理master主分支。自己管理分支</p>
-<p>​    <img src="多客户端使用/配置修改.png" alt="配置修改"></p>
+<p>​    <img src="/2018/12/04/多客户端使用/配置修改.png" alt="配置修改"></p>
 <p> <strong>修改配置并保存</strong></p>
 </li>
-<li><p>在本地gitbash连接远程仓库,使用  git clone +仓库地址 下载到本地<img src="多客户端使用/分支.png" alt="分支"></p>
+<li><p>在本地gitbash连接远程仓库,使用  git clone +仓库地址 下载到本地<img src="/2018/12/04/多客户端使用/分支.png" alt="分支"></p>
 </li>
 <li><p>将hexo下的文件夹复制到刚刚clone到本地的文件夹中</p>
 <blockquote>
@@ -564,7 +564,7 @@
           
             <h4 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h4><ol>
 <li><p>从docke hub上获取下载地址</p>
-<p><img src="docker使用mongoDb/TIM截图20181204160443.png" alt="下载地址"></p>
+<p><img src="/2018/12/04/docker使用mongoDb/TIM截图20181204160443.png" alt="下载地址"></p>
 <blockquote>
 <p>默认版本信息为(latest) 如需其他版本也可在docker hub中查找 </p>
 </blockquote>
@@ -581,10 +581,10 @@
 <p>docker run –name mongo -v /etc/data/mongodb:/data/db  -d mongo</p>
 </blockquote>
 <p> <strong>坑</strong>: 使用命令 docker ps 查看运行容器  发现容器没有启动</p>
-<p><img src="docker使用mongoDb/TIM截图20181204162115.png" alt="查看"></p>
+<p><img src="/2018/12/04/docker使用mongoDb/TIM截图20181204162115.png" alt="查看"></p>
 <p>使用命令docker ps -a 查看 发现容器已经退出 </p>
 <p>使用命令docker logs (containerId) 查看日志信息</p>
-<p><img src="docker使用mongodb/TIM截图20181204162659.png" alt=""> </p>
+<p><img src="/2018/12/04/docker使用mongoDb/TIM截图20181204162659.png" alt=""> </p>
 <p>提示权限不够  在运行命令加上  –privileged=true </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name mongo -v /etc/data/mongodb:/data/db --privileged=true -d mongo</span><br></pre></td></tr></table></figure>
 <p>如果提示容器名已在使用（is already in use ）docker rm mongo</p>
