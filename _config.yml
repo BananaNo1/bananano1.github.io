@@ -81,7 +81,9 @@ search:
   format: html
   limit: 10000
   
-  
+plugins:
+    hexo-generator-feed
+
 #Rss
 feed:
   type: atom
