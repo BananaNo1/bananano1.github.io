@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-04T08:40:40.639Z</updated>
+  <updated>2018-12-05T11:16:27.804Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mongoDb</title>
+    <link href="http://yoursite.com/2018/12/05/mongoDb/"/>
+    <id>http://yoursite.com/2018/12/05/mongoDb/</id>
+    <published>2018-12-05T11:11:41.000Z</published>
+    <updated>2018-12-05T11:16:27.804Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;update&quot;&gt;&lt;a href=&quot;#update&quot; class=&quot;headerlink&quot; title=&quot;update&quot;&gt;&lt;/a&gt;update&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;类型&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th
+        
+      
+    
+    </summary>
+    
+      <category term="mogondb" scheme="http://yoursite.com/categories/mogondb/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>多客户端使用</title>
