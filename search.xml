@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[多客户端使用]]></title>
+    <url>%2F2018%2F12%2F04%2F%E5%A4%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[多客户端使用 github上创建多分支,hexo管理master主分支。自己管理分支 ​ 修改配置并保存 在本地gitbash连接远程仓库,使用 git clone +仓库地址 下载到本地 将hexo下的文件夹复制到刚刚clone到本地的文件夹中 12&gt; 有多个.git文件夹时候可能会上传失败，保留根目录的.git文件夹&gt; 提交分支 123456&gt; 查看当前分支 如果当前分支为master分支 需要切换到自己管理的分支，然后提交&gt; git branch&gt; git add .&gt; git commit -m &apos;back up &apos;&gt; git push&gt; 其他电脑 12345678910111213&gt; 新电脑的ssh key 添加到github账户上&gt; clone远程仓库的代码 查看当前分支&gt; 切换到 username.github.io目录,需要先执行&gt; npm install(.gitignore忽略了文件)&gt; 提交(注意：当前分支) git pull 查看有无冲突&gt; git add .&gt; git commit -m &apos;back up&apos;(&apos;&apos;里面内容可修改)&gt; git push&gt; hexo部署 hexo server 查看本地&gt; hexo clean &gt; hexo d -g&gt; hexo deploy &gt;]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[docker使用mongoDb]]></title>
+    <url>%2F2018%2F12%2F04%2Fdocker%E4%BD%BF%E7%94%A8mongoDb%2F</url>
+    <content type="text"><![CDATA[安装mongodb 从docke hub上获取下载地址 默认版本信息为(latest) 如需其他版本也可在docker hub中查找 运行镜像基本执行 123456&gt; docker run --name mongo -d mongo:tag&gt; --name 别名&gt; -d 后台执行&gt; mongo:tag：下载的mongodb版本 默认为latest&gt; 默认端口:27017&gt; 持久化 在宿主机上创建一个数据存储目录（/etc/data/mongodb），将其映射到容器中的目录中。将数据库文件存储在主机系统，便于主机系统上的工具和应用程序访问文件 mkdir -p /etc/data/mongodb docker run –name mongo -v /etc/data/mongodb:/data/db -d mongo 坑: 使用命令 docker ps 查看运行容器 发现容器没有启动 使用命令docker ps -a 查看 发现容器已经退出 使用命令docker logs (containerId) 查看日志信息 提示权限不够 在运行命令加上 –privileged=true 1docker run --name mongo -v /etc/data/mongodb:/data/db --privileged=true -d mongo 如果提示容器名已在使用（is already in use ）docker rm mongo 容器启动后，运行如下命令以管理员进入终端命令行 1docker exec -it mongo mongo admin 可以看到 /etc/data/mongodb 目录下已存在数据]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+        <tag>数据库</tag>
+        <tag>mongodb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Swagger注解]]></title>
+    <url>%2F2018%2F12%2F04%2FSwagger%E6%B3%A8%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[注解详解 @Api() : 用于类(controller)；标识这个类是swagger的资源 123tags: 表示说明,设置这个值、value的值会被覆盖value: url的路径值description: 对api资源的描述 @ApiOperation() :用于方法(controller里面的方法); 123value:url的路径值tags:设置这个值，value的值会被覆盖description：对该方法的描述 @ApiParame:属性描述，用于解释方法中的参数 1234name:属性名称value：属性值required:是否属性必填hidden:隐藏该属性 @ApiResponse:请求返回信息描述,用于controller方法之上 12code: 请求返回的状态码（http请求码）message：信息描述 @ApiModel() : 用于返回对象类上,对类进行说明；描述返回对象的意义 @ApiModelProperty: 描述一个model的属性。]]></content>
+      <categories>
+        <category>Swagger</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello,Hexo]]></title>
+    <url>%2F2018%2F12%2F03%2FHello-Hexo%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+</search>
