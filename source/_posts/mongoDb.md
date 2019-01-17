@@ -61,7 +61,7 @@ db.users.update(
 ```
 criretia:查询条件
 objNew:update对象和一些更新操作符
-upsert：默认是false.如果不存在update的记录，时候插入objNew这个新的文档，true为插入。
+upsert：默认是false.如果不存在update的记录时候插入objNew这个新的文档，true为插入。存在update记录时候则修改这条记录。
 multi:默认是false.只更新找到的第一条记录。如果为true,把按条件查询出来的记录全部更新
 ```
 
