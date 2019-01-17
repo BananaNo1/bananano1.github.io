@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="记录,">
+  <meta name="keywords" content="mysql,docker,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="注解详解 @Api() : 用于类(controller)；标识这个类是swagger的资源   123tags: 表示说明,设置这个值、value的值会被覆盖value: url的路径值description: 对api资源的描述  @ApiOperation() :用于方法(controller里面的方法);  123value:url的路径值tags:设置这个值，value的值会被覆盖des">
-<meta name="keywords" content="记录">
+<meta name="description" content="Mysql主从配置(基于docker)安装docker12345yum-config-manager --add-repo http://mirrors.aliyun.com/dockerce/linux/centos/docker-ce.repo使用阿里下载源 yum -y install docker-ce 安装高版本 安装启动mysql 5.6docker pull mysql:5.6:安装">
+<meta name="keywords" content="mysql,docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Swagger注解">
-<meta property="og:url" content="http://yoursite.com/2018/12/04/Swagger注解/index.html">
+<meta property="og:title" content="mysql主从配置(基于docker)">
+<meta property="og:url" content="http://yoursite.com/2019/01/17/mysql主从配置-基于docker/index.html">
 <meta property="og:site_name" content="学习日志">
-<meta property="og:description" content="注解详解 @Api() : 用于类(controller)；标识这个类是swagger的资源   123tags: 表示说明,设置这个值、value的值会被覆盖value: url的路径值description: 对api资源的描述  @ApiOperation() :用于方法(controller里面的方法);  123value:url的路径值tags:设置这个值，value的值会被覆盖des">
+<meta property="og:description" content="Mysql主从配置(基于docker)安装docker12345yum-config-manager --add-repo http://mirrors.aliyun.com/dockerce/linux/centos/docker-ce.repo使用阿里下载源 yum -y install docker-ce 安装高版本 安装启动mysql 5.6docker pull mysql:5.6:安装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-04T02:18:59.566Z">
+<meta property="og:updated_time" content="2019-01-17T05:55:00.717Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Swagger注解">
-<meta name="twitter:description" content="注解详解 @Api() : 用于类(controller)；标识这个类是swagger的资源   123tags: 表示说明,设置这个值、value的值会被覆盖value: url的路径值description: 对api资源的描述  @ApiOperation() :用于方法(controller里面的方法);  123value:url的路径值tags:设置这个值，value的值会被覆盖des">
+<meta name="twitter:title" content="mysql主从配置(基于docker)">
+<meta name="twitter:description" content="Mysql主从配置(基于docker)安装docker12345yum-config-manager --add-repo http://mirrors.aliyun.com/dockerce/linux/centos/docker-ce.repo使用阿里下载源 yum -y install docker-ce 安装高版本 安装启动mysql 5.6docker pull mysql:5.6:安装">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/04/Swagger注解/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/17/mysql主从配置-基于docker/">
 
 
 
 
 
-  <title>Swagger注解 | 学习日志</title>
+  <title>mysql主从配置(基于docker) | 学习日志</title>
   
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/04/Swagger注解/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/17/mysql主从配置-基于docker/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leis">
@@ -337,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Swagger注解</h1>
+          <h1 class="post-title" itemprop="name headline">mysql主从配置(基于docker)</h1>
         
 
         <div class="post-meta">
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T09:50:10+08:00">
-                2018-12-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-17T13:53:56+08:00">
+                2019-01-17
               </time>
             
 
@@ -359,28 +359,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Swagger/" itemprop="url" rel="index">
-                    <span itemprop="name">Swagger</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -409,29 +387,33 @@
       
 
       
-        <h4 id="注解详解"><a href="#注解详解" class="headerlink" title="注解详解"></a>注解详解</h4><ol>
-<li><p>@Api() : 用于类(controller)；标识这个类是swagger的资源  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags: 表示说明,设置这个值、value的值会被覆盖</span><br><span class="line">value: url的路径值</span><br><span class="line">description: 对api资源的描述</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>@ApiOperation() :用于方法(controller里面的方法);</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">value:url的路径值</span><br><span class="line">tags:设置这个值，value的值会被覆盖</span><br><span class="line">description：对该方法的描述</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>@ApiParame:属性描述，用于解释方法中的参数</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name:属性名称</span><br><span class="line">value：属性值</span><br><span class="line">required:是否属性必填</span><br><span class="line">hidden:隐藏该属性</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>@ApiResponse:请求返回信息描述,用于controller方法之上</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">code: 请求返回的状态码（http请求码）</span><br><span class="line">message：信息描述</span><br></pre></td></tr></table></figure>
-<ol start="5">
-<li><p>@ApiModel() : 用于返回对象类上,对类进行说明；描述返回对象的意义</p>
-</li>
-<li><p>@ApiModelProperty: 描述一个model的属性。 </p>
-</li>
-</ol>
-</li>
-</ol>
+        <h3 id="Mysql主从配置-基于docker"><a href="#Mysql主从配置-基于docker" class="headerlink" title="Mysql主从配置(基于docker)"></a>Mysql主从配置(基于docker)</h3><h4 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum-config-manager --add-repo http://mirrors.aliyun.com/dockerce/linux/centos/docker-ce.repo</span><br><span class="line">使用阿里下载源 </span><br><span class="line"></span><br><span class="line">yum -y install docker-ce</span><br><span class="line"> 安装高版本</span><br></pre></td></tr></table></figure>
+<h4 id="安装启动mysql-5-6"><a href="#安装启动mysql-5-6" class="headerlink" title="安装启动mysql 5.6"></a>安装启动mysql 5.6</h4><p><code>docker pull mysql:5.6</code>:安装mysql5.6</p>
+<p><code>docker run --name mysql -v /mysql/my.cnf:/etc/mysql/my.cnf -p 3306:3306  -e MYSQL_ROOT_PASSWORD=&#39;123456&#39; -d mysql:5.6</code> :启动mysql 将配置文件挂载到/mysql/my.cnf</p>
+<p>没有默认创建文件夹==不是==文件,会报错.</p>
+<p>​    </p>
+<h4 id="开启主从配置文件"><a href="#开启主从配置文件" class="headerlink" title="开启主从配置文件"></a>开启主从配置文件</h4><h5 id="配置主机"><a href="#配置主机" class="headerlink" title="配置主机"></a>配置主机</h5><p>在master上 修改外挂的配置文件 my.cnf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">log-bin=mysql-bin</span><br><span class="line">server-id=196 //同一局域网类必须唯一,一般设为ip</span><br><span class="line">binlog-ignore-db=mysql //复制过滤 一般不同步mysql</span><br></pre></td></tr></table></figure>
+<p>进入docker容器</p>
+<p><code>docker exec -it 容器名 /bin/bash</code></p>
+<p>mysql中创建用户</p>
+<p><code>grant replication slave on *.* to username@&#39;%&#39; identified by password</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">%代表所有用户都可以连,可以换成ip地址增加安全性</span><br><span class="line">username:用户名</span><br><span class="line">password:密码</span><br></pre></td></tr></table></figure>
+<p><code>show master status</code>:记录下==file==和==position==的值</p>
+<p><strong>ps</strong>:记录下值后不要继续操作master,避免值发生改变</p>
+<h5 id="配置从机"><a href="#配置从机" class="headerlink" title="配置从机"></a>配置从机</h5><p>​    在slave上面修改my.cnf文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">server-id=129</span><br><span class="line">##开启二进制日志功能,以备salve作为其他slave的master时使用</span><br><span class="line">log-bin=mysql-slave-bin</span><br><span class="line">binlog-ignore-db=mysql</span><br><span class="line">relay_log=mysql-relay-bin</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>binlog :记录下所有数据的更改,可用于本机数据恢复和主从同步</p>
+<p>relaylog:</p>
+<p>mysql主节点将binlog写入本地,从节点定时请求增量binlog，主节点将binlog同步到从节点。</p>
+<p>从节点单独进程会将binlog 拷贝至本地 relaylog中。</p>
+</blockquote>
+<p><code>change master to master_host=&#39;192.168.159.128&#39;, master_user=&#39;slave&#39;, master_password=&#39;123456&#39;, master_port=3306, master_log_file=&#39;mysql-bin.000001&#39;, master_log_pos= 2830, master_connect_retry=30;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">master_port:mysql主节点的地址</span><br><span class="line">master_user：主机中创建的用户 一般不适用root</span><br><span class="line">master_password：主机中创建的用户密码</span><br><span class="line">master_port:端口号</span><br><span class="line">master_log_file：主机中记录下的file值</span><br><span class="line">master_log_pos:主机中记录的position值</span><br><span class="line">master_connect_retry:如果连接失败,重试的时间间隔，单位是s,默认60s</span><br></pre></td></tr></table></figure>
+<p><code>start slave</code>:开启主从</p>
+<p><code>show slave status\G</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">正常情况下SlaveIORunning和SlaveSQLRunning都是yes</span><br><span class="line"></span><br><span class="line">SlaveIORunning为connecting</span><br><span class="line"> 检查连接地址,账号密码和文件是否正确</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -449,7 +431,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/记录/" rel="tag"># 记录</a>
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
+          
+            <a href="/tags/docker/" rel="tag"># docker</a>
           
         </div>
       
@@ -462,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/03/Hello-Hexo/" rel="next" title="Hello,Hexo">
-                <i class="fa fa-chevron-left"></i> Hello,Hexo
+              <a href="/2018/12/05/mongoDb/" rel="next" title="mongoDb">
+                <i class="fa fa-chevron-left"></i> mongoDb
               </a>
             
           </div>
@@ -471,10 +455,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/04/docker使用mongoDb/" rel="prev" title="docker使用mongoDb">
-                docker使用mongoDb <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -615,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#注解详解"><span class="nav-number">1.</span> <span class="nav-text">注解详解</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mysql主从配置-基于docker"><span class="nav-number">1.</span> <span class="nav-text">Mysql主从配置(基于docker)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装docker"><span class="nav-number">1.1.</span> <span class="nav-text">安装docker</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装启动mysql-5-6"><span class="nav-number">1.2.</span> <span class="nav-text">安装启动mysql 5.6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开启主从配置文件"><span class="nav-number">1.3.</span> <span class="nav-text">开启主从配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置主机"><span class="nav-number">1.3.1.</span> <span class="nav-text">配置主机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置从机"><span class="nav-number">1.3.2.</span> <span class="nav-text">配置从机</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

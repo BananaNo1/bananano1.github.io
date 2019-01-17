@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-05T11:16:27.804Z</updated>
+  <updated>2019-01-17T05:55:00.717Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>mysql主从配置(基于docker)</title>
+    <link href="http://yoursite.com/2019/01/17/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE-%E5%9F%BA%E4%BA%8Edocker/"/>
+    <id>http://yoursite.com/2019/01/17/mysql主从配置-基于docker/</id>
+    <published>2019-01-17T05:53:56.000Z</published>
+    <updated>2019-01-17T05:55:00.717Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Mysql主从配置-基于docker&quot;&gt;&lt;a href=&quot;#Mysql主从配置-基于docker&quot; class=&quot;headerlink&quot; title=&quot;Mysql主从配置(基于docker)&quot;&gt;&lt;/a&gt;Mysql主从配置(基于docker)&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+      <category term="docker" scheme="http://yoursite.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mongoDb</title>
     <link href="http://yoursite.com/2018/12/05/mongoDb/"/>
     <id>http://yoursite.com/2018/12/05/mongoDb/</id>
     <published>2018-12-05T11:11:41.000Z</published>
-    <updated>2018-12-05T11:16:27.804Z</updated>
+    <updated>2018-12-06T06:51:00.856Z</updated>
     
     <summary type="html">
     

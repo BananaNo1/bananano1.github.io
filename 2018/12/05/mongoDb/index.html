@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="学习日志">
 <meta property="og:description" content="update类型    Type Number Alias Notes     Double 1 “double”    String 2 “string”    Object 3 “object”    Array 4 “array”    Binary data 5 “binData”    Undefined 6 “undefined” Deprecated.   ObjectId 7 “o">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-05T11:16:27.804Z">
+<meta property="og:updated_time" content="2018-12-06T06:51:00.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mongoDb">
 <meta name="twitter:description" content="update类型    Type Number Alias Notes     Double 1 “double”    String 2 “string”    Object 3 “object”    Array 4 “array”    Binary data 5 “binData”    Undefined 6 “undefined” Deprecated.   ObjectId 7 “o">
@@ -562,7 +562,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">db.users.update(</span><br><span class="line">   &#123; &quot;favorites.artist&quot;: &quot;Pisanello&quot; &#125;,</span><br><span class="line">   &#123;</span><br><span class="line">     $set: &#123; &quot;favorites.food&quot;: &quot;pizza&quot;, type: 0,  &#125;,</span><br><span class="line">     $currentDate: &#123; lastModified: true &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   &#123; multi: true &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <p><code>db.collection.update(criteria,objNew,upsert,multi)</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">criretia:查询条件</span><br><span class="line">objNew:update对象和一些更新操作符</span><br><span class="line">upsert：默认是false.如果不存在update的记录，时候插入objNew这个新的文档，true为插入。</span><br><span class="line">multi:默认是false.只更新找到的第一条记录。如果为true,把按条件查询出来的记录全部更新</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">criretia:查询条件</span><br><span class="line">objNew:update对象和一些更新操作符</span><br><span class="line">upsert：默认是false.如果不存在update的记录时候插入objNew这个新的文档，true为插入。存在update记录时候则修改这条记录。</span><br><span class="line">multi:默认是false.只更新找到的第一条记录。如果为true,把按条件查询出来的记录全部更新</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -650,6 +650,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/01/17/mysql主从配置-基于docker/" rel="prev" title="mysql主从配置(基于docker)">
+                mysql主从配置(基于docker) <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -727,7 +731,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -749,7 +753,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -810,7 +814,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
